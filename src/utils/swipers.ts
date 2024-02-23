@@ -25,32 +25,32 @@ export const swipers = () => {
       allowTouchMove: false,
     });
 
-    let time = 0;
-    setTimeout(() => {
-      for (let index = 0; index < elChildren.length; index++) {
-        if (index >= 3 && index <= 6) {
-          setTimeout(() => {
-            swiper.slideTo(index);
-          }, time);
-          time += 150;
-        } else if (index >= 7 && index <= 10) {
-          setTimeout(() => {
-            swiper.slideTo(index);
-          }, time);
-          time += 250;
-        } else if (index >= 11 && index <= 15) {
-          setTimeout(() => {
-            swiper.slideTo(index);
-          }, time);
-          time += 350;
-        }
-      }
-    }, 2300);
+    // let time = 0;
+    // setTimeout(() => {
+    //   for (let index = 0; index < elChildren.length; index++) {
+    //     if (index >= 3 && index <= 6) {
+    //       setTimeout(() => {
+    //         swiper.slideTo(index);
+    //       }, time);
+    //       time += 150;
+    //     } else if (index >= 7 && index <= 10) {
+    //       setTimeout(() => {
+    //         swiper.slideTo(index);
+    //       }, time);
+    //       time += 250;
+    //     } else if (index >= 11 && index <= 15) {
+    //       setTimeout(() => {
+    //         swiper.slideTo(index);
+    //       }, time);
+    //       time += 350;
+    //     }
+    //   }
+    // }, 2300);
 
     setTimeout(() => {
       setInterval(() => {
         swiper.slideNext();
       }, 2000);
-    }, 4000);
+    }, 1000);
   });
 };

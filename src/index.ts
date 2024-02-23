@@ -9,11 +9,13 @@ import { nestedElement } from './nest/nestElement';
 
 //Utils
 import { swipers } from '$utils/swipers';
+import { preloader } from '$utils/preloader';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  nestedElement();
+  // nestedElement();
+  // modal();
   linkblockedit();
-  modal();
   swipers();
+  preloader();
 });

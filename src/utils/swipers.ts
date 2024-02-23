@@ -19,7 +19,7 @@ export const swipers = () => {
       // speed: 200,
       slidesPerView: 3,
       spaceBetween: 0,
-      // loop: true,
+      loop: true,
       centeredSlides: true,
       centeredSlidesBounds: true,
       allowTouchMove: false,
@@ -46,5 +46,11 @@ export const swipers = () => {
         }
       }
     }, 2300);
+
+    setTimeout(() => {
+      setInterval(() => {
+        swiper.slideNext();
+      }, 2000);
+    }, 4000);
   });
 };

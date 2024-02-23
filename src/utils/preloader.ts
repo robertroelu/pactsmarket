@@ -17,7 +17,7 @@ export const preloader = () => {
   );
   gsap.to(preloader, {
     display: 'none',
-    delay: 3.3,
+    delay: 2.7,
   });
 
   // Preloader subheading

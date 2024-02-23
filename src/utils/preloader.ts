@@ -12,12 +12,12 @@ export const preloader = () => {
     {
       opacity: 0,
       duration: 1,
-      delay: 3,
+      delay: 2.3,
     }
   );
   gsap.to(preloader, {
     display: 'none',
-    delay: 4,
+    delay: 3.3,
   });
 
   // Preloader subheading
@@ -31,7 +31,7 @@ export const preloader = () => {
     {
       opacity: 1,
       duration: 1.1,
-      delay: 2,
+      delay: 1.3,
     }
   );
 
@@ -52,7 +52,7 @@ export const preloader = () => {
     });
   });
 
-  let initDelay = 1;
+  let initDelay = 0.3;
   images.forEach((image, index) => {
     const lengthOfImages = images.length;
     if (index < lengthOfImages) {

@@ -10,6 +10,7 @@ import { nestedElement } from './nest/nestElement';
 //Utils
 import { swipers } from '$utils/swipers';
 import { preloader } from '$utils/preloader';
+import { navFrog } from '$utils/navFrog';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
@@ -18,4 +19,5 @@ window.Webflow.push(() => {
   linkblockedit();
   swipers();
   preloader();
+  navFrog();
 });

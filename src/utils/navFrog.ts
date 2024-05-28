@@ -44,7 +44,7 @@ export const navFrog = () => {
           firstTab.click(); // Simulate a click on the first tab if no next tab is found
         }
       }
-    }, 10000); // 10 Second Rotation
+    }, 6000); // 6 Second Rotation
   }
 
   // Reset Loops

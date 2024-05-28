@@ -3,6 +3,7 @@ import { gsap } from 'gsap';
 export const preloader = () => {
   // Preloader section
   const preloader = document.querySelector('.preloader');
+  if (!preloader) return;
   gsap.fromTo(
     preloader,
     {
